@@ -114,32 +114,6 @@ git lfs install
 git lfs pull
 ```
 
-## Publishing to GitHub
-
-1. Initialize git (if not already):
-```bash
-git init
-```
-
-2. Add all files:
-```bash
-git add .
-```
-
-3. Commit:
-```bash
-git commit -m "Initial commit: Aircraft Image Classification Web App"
-```
-
-4. Create a repository on GitHub and push:
-```bash
-git remote add origin <your-github-repo-url>
-git branch -M main
-git push -u origin main
-```
-
-**Note:** The first push may take longer due to large model files being uploaded via Git LFS.
-
 ## Author
 
 **Farah Alebous**
