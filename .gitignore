@@ -29,9 +29,8 @@ Thumbs.db
 # Jupyter Notebook checkpoints
 .ipynb_checkpoints
 
-# Model files (if too large, consider Git LFS)
-# Uncomment if models are too large for GitHub (>100MB)
-# models/*.pth
+# Model files are tracked with Git LFS (see .gitattributes)
+# models/*.pth files are handled by Git LFS
 
 # Environment variables
 .env

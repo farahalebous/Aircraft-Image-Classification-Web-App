@@ -48,10 +48,12 @@ pip install -r requirements.txt
 ```
 
 4. Ensure model files are in the `models/` folder:
-   - `model_cnn1.pth`
-   - `model_mlp1.pth`
-   - `model_alexnet1.pth`
-   - `model_resnet1.pth`
+   - `model_cnn1.pth` (97KB)
+   - `model_mlp1.pth` (25MB)
+   - `model_alexnet1.pth` (218MB - uses Git LFS)
+   - `model_resnet1.pth` (90MB)
+
+**Note:** Large model files (>100MB) are stored using Git LFS. When cloning, ensure Git LFS is installed and run `git lfs pull` to download the model files.
 
 ## Usage
 
@@ -95,6 +97,48 @@ DL_APP/
 - **Bootstrap 5** - Frontend framework
 - **Font Awesome** - Icons
 - **Pillow** - Image processing
+
+## Git LFS Setup
+
+This repository uses Git LFS for large model files. If you're cloning this repository:
+
+1. Install Git LFS:
+```bash
+brew install git-lfs  # macOS
+# or
+git lfs install
+```
+
+2. After cloning, pull the LFS files:
+```bash
+git lfs pull
+```
+
+## Publishing to GitHub
+
+1. Initialize git (if not already):
+```bash
+git init
+```
+
+2. Add all files:
+```bash
+git add .
+```
+
+3. Commit:
+```bash
+git commit -m "Initial commit: Aircraft Image Classification Web App"
+```
+
+4. Create a repository on GitHub and push:
+```bash
+git remote add origin <your-github-repo-url>
+git branch -M main
+git push -u origin main
+```
+
+**Note:** The first push may take longer due to large model files being uploaded via Git LFS.
 
 ## Author
 
